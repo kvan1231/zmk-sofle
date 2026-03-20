@@ -6,18 +6,24 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+      
+    - name: infely                             # new entry
+      url-base: https://github.com/infely      # new entry
   #  - name: gpeye
   #    url-base: https://github.com/GPeye
   projects:
-   # - name: mario-peripheral-animation
-   #   remote: gpeye
-   #    revision: main 
-    - name: eyelash_sofle
-      url: https://github.com/a741725193/zmk-sofle
-      revision: main
+    # - name: mario-peripheral-animation
+    #   remote: gpeye
+    #    revision: main 
+    # - name: eyelash_sofle
+    #   url: https://github.com/a741725193/zmk-sofle
+    #   revision: main
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: nice-view-battery                  # new entry
+      remote: infely                           # new entry
+      revision: main                           # new entry
   self:
     path: boards
