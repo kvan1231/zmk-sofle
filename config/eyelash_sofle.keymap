@@ -24,7 +24,6 @@
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
-};
 
 &soft_off { hold-time-ms = <2000>; };
 
@@ -79,7 +78,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "Letters";
         };
 
         layer_1 {
@@ -91,7 +90,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Functions";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -104,7 +103,7 @@
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
-            display-name = "layer2";
+            display-name = "Bluetooth";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -117,7 +116,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            display-name = "layer3";
+            display-name = "Unused1";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -130,7 +129,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            display-name = "layer4";
+            display-name = "Unused2";
             sensor-bindings = <&scroll_encoder>;
         };
     };
