@@ -70,7 +70,7 @@ layers:
   - F1
   - F2
   - F3
-  - F5
+  - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
